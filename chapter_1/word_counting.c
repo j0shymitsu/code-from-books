@@ -1,40 +1,38 @@
 #include <stdio.h>
 
-#define IN 1    // Inside a word
-#define OUT 0   // Outside a word
+#define IN  1
+#define OUT 2
 
-/* Count lines words, and characters in input */
+/* count lines, words, and char in input */
 
-int main (void)
+int main(void)
 {
-    int c, nl, nw, nc, state;    // Declares the variables
+	int c, nl, nw, nc, state;
 
-    state = OUT;                 // Initialise state to OUT (outside of a word)
-    nl = nw = nc = 0;            // Initialise line, word, and char counts
+	state = OUT;
+	nl = nw = nc = 0;
 
-    while((c = getchar()) != EOF)
-    {
-        nc++;                    // Increment char count
+	while ((c = getchar()) != EOF)
+	{
+		++nc;
 
-        if (c == '\n')
-        {
-           nl++;                 // Increment line count
-        }
+		if (c == '\n')
+		{
+			++nl;
+		}
 
-        if (c == ' ' || c == '\n' || c == '\t')
-        {
-            state = OUT;         // If space, newline, or tab, set state to OUT
-        }
+		if (c == ' ' || c == '\n' || c == '\t')
+		{
+			state = OUT;
+		}
 
-        else if (state == OUT)
-        {
-            state = IN;         // If previously OUT and now a character, start a word
-            nw++;               // Increment word count
-        }
+		else if (state == OUT)
+		{
+			state = IN;
+			++nw;
+		}
+	}
 
-    }
-
-    printf("%d %d %d\n", nl, nw, nc);
-
-    return 0;
+	printf("%d %d %d\n", nl, nw, nc);
 }
+
