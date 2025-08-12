@@ -7,7 +7,7 @@
 
 int main(void)
 {
-    int c, i, nc, state;    // characters; loop counter; number of char in word; state (in/out); histogram bars
+    int c, nc, state;    // characters; loop counter; number of char in word; state (in/out); histogram bars
     int nchar[4];    // array for histogram
     char star;
     
@@ -85,6 +85,7 @@ int main(void)
         {
             printf("*");
         }
+
         printf("\n");
     }
 

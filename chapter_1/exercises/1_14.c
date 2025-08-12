@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-/* histogram of word lengths */
+/* histogram of letter frequencies */
 
 int main(void)
 {
-    int i, nc, state;    // characters; loop counter; number of char; state (in/out); histogram bars
-    int nchar[4];    // array for histogram
-    char c;
+    int i, nc, state;    	// loop ctr, characters; state (in/out)
+    int nchar[4];    		// array for histogram
+    char c;			// current character
     
     /* initialise elements in array to 0 */
     for(i = 0; i < 4; i++)
@@ -62,5 +62,4 @@ int main(void)
         }
         printf("\n");
     }
-
 }
