@@ -27,19 +27,14 @@ int main(void)
         }
     }
 
-    // // If there's at least one line, print the longest one
-    // if (max > 0)    // This ensures there's something to print
-    // {
-    //     printf("The longest sentnce was: %sIt's length was: %d characters.", longest, max);    // Print the longest line and its details
-    // }
-
-    // return 0;    // End of main
-
-    // Print all input lines that are longer than 80 characters
-    if (len > 80)
+    // If there's at least one line, print the longest one
+    if (max > 0)    // This ensures there's something to print
     {
-        printf("%s")
+         printf("The longest sentnce was: %s\nIt's length was: %d characters.", longest, max);    // Print the longest line and its details
     }
+
+    return 0;    // End of main
+
 }
 
 /* GETLINE */
