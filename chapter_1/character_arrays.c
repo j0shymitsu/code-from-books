@@ -2,11 +2,11 @@
 #define MAXLINE 1000    // Defines constant for maximum input size
 
 
-int getline(char line[], int maxline);    // Declaration of the 'getline' function
+int get_line(char line[], int maxline);    // Declaration of the 'get_line' function
 void copy(char to[], char from[]);        // Declaration of the 'copy' function
 
 
-/* PRINT LONGEST INPUT LINE */
+/* PRINT LONGEST` INPUT LINE */
 int main(void)
 {
     int len;    // Variable to store the length of the current input line
@@ -17,7 +17,7 @@ int main(void)
     max = 0;    // Initialise the longest length to 0
 
     // Read lines from input using a loop
-    while((len = getline(line, MAXLINE)) > 0)    // Get length of each line
+    while((len = get_line(line, MAXLINE)) > 0)    // Get length of each line
     {
         // Check if the current line length is greater than the maximum length so far
         if(len > max)
@@ -30,7 +30,7 @@ int main(void)
     // If there's at least one line, print the longest one
     if (max > 0)    // This ensures there's something to print
     {
-         printf("The longest sentnce was: %s\nIt's length was: %d characters.", longest, max);    // Print the longest line and its details
+         printf("\nThe longest sentence was: %sIt's length was: %d characters.\n", longest, max);    // Print the longest line and its details
     }
 
     return 0;    // End of main
@@ -39,7 +39,7 @@ int main(void)
 
 /* GETLINE */
 /* This function reads a line of input and returns its length */
-int getline(char s[], int lim)
+int get_line(char s[], int lim)
 {
     int c, i;
 
