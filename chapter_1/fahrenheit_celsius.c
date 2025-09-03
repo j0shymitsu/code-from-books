@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /* Print Fahrenheit-Celsius table */
 
 int main(void)
