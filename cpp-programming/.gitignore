@@ -1,0 +1,40 @@
+# Build directories and files
+cmake-build-debug/
+build/
+ninja*
+.ninja*
+*.log
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Makefile
+*.o
+*.a
+*.so
+
+# CLion specific
+.idea/
+*.iml
+
+# Temporary files
+*~
+*.swp
+
+# Compiled binaries
+*.exe
+*.out
+
+# Dependency files
+*.deps
+
+# Test logs
+LastTest.log
+
+# API-related JSON files (if not needed in version control)
+*/api/v1/reply/*.json
+
+# Other unversioned files
+Unversioned Files/
+
+*.txt
+out/

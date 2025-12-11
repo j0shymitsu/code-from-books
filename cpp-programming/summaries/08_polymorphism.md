@@ -1,0 +1,15 @@
+# Polymorphism
+- The thre cornerstones of OOP are **encapsulation, inheritance**, and **polymorphism**.
+- Polymorphic entities have a different meaning, or purpose, according to their context.
+- A base class pointer can be used to call inherited methods in the derived class to which it is bound.
+- A base class pointer can also be used to explicitly call base class methods using the **::** scope  resolution operator.
+- Virtual base class methods are intended to be overridden in derived classes.
+- Polymorphism allows calls to methods of the same name to be directed to the appropriate overriding method.
+- Capability classes generally contain no data but merely declare virtual methods that can be overriden in derived classes.
+- Virtual methods that return a **-1** value signal an error to indicate they should not be called directly
+- An Abstract Data Type (ADT) represents a concept and is always the base to other classes.
+- Declaration of a pure virtual method, with the assignation **=0**, indicates that class is an ADT.
+- Classes can be derived from an ADT - but you cannot create an instance of an ADT
+- An ADT can be derived from another ADT to create a complex hierarchy of classes.
+- Programs can be separated into header, implementation, and client files to aid portability and to ease code maintenance.
+- Header files that are referenced by **#include** directives will be automatically included by the compiler during compilation.
